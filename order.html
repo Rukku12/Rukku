@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order a Colorful Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(36, 92, 6);">
+    <header>
+        <h1>Order Your Colorful Pizza</h1>
+        <p>Please fill out the form below to place your order.</p>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="pizza-type">Select Pizza Type:</label>
+                <select id="pizza-type" name="pizza-type" required>
+                    <option value="margherita">Margherita Pizza</option>
+                    <option value="pepperoni">Pepperoni Pizza</option>
+                    <option value="veggie">Veggie Delight Pizza</option>
+                    <option value="bbq-chicken">BBQ Chicken Pizza</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Choose Pizza Size:</label>
+                <div class="radio-group">
+                    <label for="small">Small</label>
+                    <input type="radio" id="small" name="size" value="small" required>
+
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+
+                    <label for="large">Large</label>
+                    <input type="radio" id="large" name="size" value="large">
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Toppings:</p>
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+
+                <label for="olives">Olives</label>
+                <input type="checkbox" id="olives" name="toppings" value="olives">
+            </div>
+            <div class="form-group">
+                <label for="delivery">Delivery Address:</label>
+                <textarea id="delivery" name="delivery" rows="3" required></textarea>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>Contact us at: order@colorfulpizza.com</p>
+    </footer>
+</body>
+</html>
+
+<body>
+  <header>
+    <h1>Pizza Order Form</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <!-- Add other navigation links if needed -->
+    </nav>
+  </header>
+  <main>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+      
+      <label>Pizza Size:</label>
+      <input type="radio" id="small" name="size" value="Small" required>
+      <label for="small">Small</label>
+      <input type="radio" id="medium" name="size" value="Medium" required>
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="Large" required>
+      <label for="large">Large</label>
+      
+      <fieldset>
+        <legend>Toppings:</legend>
+        <input type="checkbox" id="cheese" name="toppings" value="Cheese">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <!-- Add more topping options as needed -->
+      </fieldset>
+      
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions" rows="4"></textarea>
+      
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Pizza Ordering Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,55 +1,69 @@
-/* Global Styles */
-
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: url("file:///C:/Users/rugmi/OneDrive/Desktop/Assignment1html/HTML.html/bangloredays.jpg");
-  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-image: url("pizza_background.jpg");
   background-size: cover;
-  line-height: 1.6;
+  color: rgb(254, 13, 13);
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  color: #faf8f8;
-  padding: 20px;
+header, footer {
   text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  padding: 20px;
 }
 
 main {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  color:crimson;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #faf8f8;
-  font-size: 22px;
-  text-align: justify;
+.form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-a {
-  color: #fcfaf9;
-  text-decoration: none;
-  transition: color 0.3s ease;
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #864c4c;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FF6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF8900;
 }
