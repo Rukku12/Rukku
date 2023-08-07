@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+
+        <link rel="stylesheet" href="projectstyles.css">
+
+   
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+       
+            const buyButton = document.querySelector("button");
+            if (buyButton) {
+                buyButton.addEventListener("click", function() {
+                    this.style.backgroundColor = "#2ecc71";
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to BestBuy</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured Product</h2>
+            <img src="C:\Users\rugmi\OneDrive\Desktop\html project\product-image.jpg.png" alt="Product Image">
+        </section>
+        <section>
+            <h2>Latest News</h2>
+            <article>
+                <h3>Exciting Announcement</h3>
+                <p>We are thrilled to announce our latest partnership with thetatts</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>About Us</h2>
+            <p>BestBuy was founded in 1985 with a purpose to enrich the lives of our customers through technology.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We created Best Buy Marketplace to offer you a huge assortment, more than just Best Buy products. Our Marketplace is like a virtual shopping mall that allows top-rated sellers to offer their products through BestBuy.ca*</p>
+        </section>
+
+        <!-- Product Page Content -->
+        <section>
+            <h2>Product Details</h2>
+          
+                <h2>Watch the Video</h2>
+                <iframe width="560" height="315" src="https://youtu.be/iuZ2BHT0PHY" frameborder="0" allowfullscreen></iframe>
+           
+            <p>Discover the amazing features of our Ultimate Smartwatch</p>
+            <p>Introducing our revolutionary product that will change your life.</p>
+            <p>Experience the future with a sleek and stylish wearable that combines cutting-edge technology with fashion-forward design. Features include:</p>
+            <ul>
+                <li>Advanced health monitoring: Heart rate, sleep, and activity tracking</li>
+                <li>Intuitive touchscreen interface for easy navigation</li>
+                <li>Long-lasting battery life, perfect for your active lifestyle</li>
+                <li>Seamless integration with your smartphone for notifications and more</li>
+            </ul>
+            <p>Stay connected, stay stylish, and elevate your everyday with the Ultimate Smartwatch.</p>
+        
+        </section>
+        <section>
+            <h2>Buy Now</h2>
+            <p>Order your Ultimate Smart Watch today.</p>
+            <button>Buy Now</button>
+        </section>
+
+        <!-- Contact Page Content -->
+        <section>
+            <h2>Contact Information</h2>
+            <p>Get in touch with us:</p>
+            <address>
+                <p>123 Main Street</p>
+                <p>Barrie, Canada</p>
+                <p>Email: bestbuybarrie@company.com</p>
+                <p>Phone: +123-456-7890</p>
+            </address>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BestBuy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
